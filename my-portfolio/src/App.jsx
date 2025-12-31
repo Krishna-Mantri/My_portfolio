@@ -1,13 +1,14 @@
-import {React,use,useEffect} from 'react'
+import {React,useEffect} from 'react'
+import Hero from './components/hero.jsx'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 function App() {
   useEffect(() => {
-    Aos.init({ duration: 2000 });
-  }, []);
+    Aos.init({ duration: 1000 });
+  }, [])
   return (
     <main className='bg-gray-950'>
-      <h1 className='text-white'>Hello, World!</h1>
+      <Hero />
       
     </main>
   )
