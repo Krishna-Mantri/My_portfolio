@@ -1,10 +1,15 @@
+import {React,use,useEffect} from 'react'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 function App() {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
-    <div className="min-h-screen flex items-center justify-center bg-slate-900">
-      <h1 className="text-4xl font-bold text-cyan-400">
-        Tailwind v4 is working 🚀
-      </h1>
-    </div>
+    <main className='bg-gray-950'>
+      <h1 className='text-white'>Hello, World!</h1>
+      
+    </main>
   )
 }
 
