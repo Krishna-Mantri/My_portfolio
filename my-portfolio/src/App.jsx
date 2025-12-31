@@ -1,5 +1,6 @@
 import {React,useEffect} from 'react'
 import Hero from './components/hero.jsx'
+import About from './components/about.jsx'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 function App() {
@@ -9,6 +10,7 @@ function App() {
   return (
     <main className='bg-gray-950'>
       <Hero />
+      <About />
       
     </main>
   )

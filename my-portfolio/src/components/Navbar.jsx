@@ -14,7 +14,7 @@ export default function Navbar() {
       data-aos="fade-up"
       data-aos-delay="300"
     >
-      <div className="container mx-auto flex items-center justify-between p-5">
+      <div className="container mx-px flex items-center justify-between p-4">
         {/* Logo Section */}
         <a href="#home" className="text-4xl font-bold italic text-white">
           Portfolio
@@ -28,7 +28,7 @@ export default function Navbar() {
           <FiMenu className="w-8 h-8 text-white " />
         </button>
         {/* Desktop navigation */}
-        <nav className="hidden md:flex items-center space-x-7">
+        <nav className="hidden fixed right-0 md:flex items-center space-x-7">
           {NavbarLinks.map((link) => (
             <a
               key={link.id}
@@ -38,7 +38,7 @@ export default function Navbar() {
               {link.name}
             </a>
           ))}
-          <button className="inline-flex text-white border-2 py-2 px-6 focus:outline-none  hover:bg-purple-800 rounded-full text-lg">
+          <button className="inline-flex text-white border-2 py-2 px-4 focus:outline-none  hover:bg-purple-800 rounded-full text-lg">
             {" "}
             Contact Me{" "}
           </button>
