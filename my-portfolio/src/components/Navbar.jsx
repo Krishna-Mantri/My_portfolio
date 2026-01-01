@@ -10,7 +10,8 @@ export default function Navbar() {
   ];
   return (
     <header
-      className="fixed top-0 left-0 w-full z-20 text-white"
+      className="fixed top-0 left-0 w-full z-20 text-white  backdrop-blur-md
+                 border-b border-purple-500/20"
       data-aos="fade-up"
       data-aos-delay="300"
     >
@@ -28,7 +29,8 @@ export default function Navbar() {
           <FiMenu className="w-8 h-8 text-white " />
         </button>
         {/* Desktop navigation */}
-        <nav className="hidden fixed right-0 md:flex items-center space-x-7">
+        <nav className="absolute  right-2 hidden md:flex items-center space-x-7 ">
+          
           {NavbarLinks.map((link) => (
             <a
               key={link.id}
