@@ -26,10 +26,10 @@ export default function Hero() {
                         <p className="text-base sm:text-lg md:text-lg text-gray-200 mb-6">I build responsive websites and applications with modern technologies.</p>
                         <div className="flex items-center space-x-4 mb-6">
                             <a href="https://www.linkedin.com/in/krishna-mantri-41165628a/">
-                                <FaLinkedin className='w-11 h-11 bg-gray-200 hover:bg-green-500'/>
+                                <FaLinkedin className='w-11 h-11 bg-gray-200 hover:text-purple-400 transition'/>
                             </a>
                             <a href="https://github.com/Krishna-Mantri">
-                                <FaGithub className='w-11 h-11 bg-gray-200 hover:bg-green-500'/>
+                                <FaGithub className='w-11 h-11 bg-gray-200 hover:text-purple-400 transition'/>
                             </a>
                         </div>
                         <a href={resume} download>
