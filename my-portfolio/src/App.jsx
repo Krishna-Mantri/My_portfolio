@@ -2,6 +2,7 @@ import {React,useEffect} from 'react'
 import Hero from './components/hero.jsx'
 import About from './components/about.jsx'
 import Skills from './components/Skills.jsx'
+import Projects from './components/Projects.jsx'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Hero />
       <About />
       <Skills />
+      <Projects />
     </main>
   )
 }
