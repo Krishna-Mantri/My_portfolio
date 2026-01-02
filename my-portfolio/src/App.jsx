@@ -3,6 +3,7 @@ import Hero from './components/hero.jsx'
 import About from './components/about.jsx'
 import Skills from './components/Skills.jsx'
 import Projects from './components/Projects.jsx'
+import Contact from './components/Contact.jsx'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <About />
       <Skills />
       <Projects />
+      <Contact />
     </main>
   )
 }

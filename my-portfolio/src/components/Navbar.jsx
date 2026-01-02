@@ -7,10 +7,12 @@ export default function Navbar() {
     { id: 2, name: "About", link: "#about" },
     { id: 3, name: "Skills", link: "#skills" },
     { id: 4, name: "Projects", link: "#projects" },
+    { id: 5, name: "Contact", link: "#contact" },
+    
   ];
   return (
     <header
-      className="fixed top-0 left-0 w-full z-20 text-white  backdrop-blur-md
+      className="fixed top-0 right-2 w-full z-20 text-white  backdrop-blur-md
                  border-b border-purple-500/20"
       data-aos="fade-up"
       data-aos-delay="300"
@@ -40,10 +42,11 @@ export default function Navbar() {
               {link.name}
             </a>
           ))}
-          <button className="inline-flex text-white border-2 py-2 px-4 focus:outline-none  hover:bg-purple-800 rounded-full text-lg">
+          {/* <button 
+          className="inline-flex text-white border-2 py-2 px-4 focus:outline-none  hover:bg-purple-800 rounded-full text-lg">
             {" "}
             Contact Me{" "}
-          </button>
+          </button> */}
         </nav>
       </div>
       {/* Mobile Navigation */}
@@ -71,10 +74,10 @@ export default function Navbar() {
             {link.name}
           </a>
         ))}
-        {/* Contact Me Button */}
+        {/* Contact Me Button
         <button className="inline-flex text-white border-2 py-2 px-6 focus:outline-none hover:bg-purple-800 rounded-full text-lg">
             Contact 
-        </button>
+        </button> */}
       </div>
     </header>
   )

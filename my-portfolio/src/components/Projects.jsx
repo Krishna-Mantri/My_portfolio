@@ -1,4 +1,8 @@
 import React, { useState } from "react";
+import cardio from "/cardio1.png";
+import ecommerce from "/ecom1.png";
+import todo from "/todoreact.png";
+import crop from "/crop1.png";
 
 const ProjectCard = ({ image, title, description, link }) => {
   return (
@@ -14,7 +18,7 @@ const ProjectCard = ({ image, title, description, link }) => {
         <img
           src={image}
           alt={title}
-          className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
+          className="w-full h-84 object-contain transition-transform duration-500 group-hover:scale-110"
         />
 
         <div
@@ -36,9 +40,9 @@ const ProjectCard = ({ image, title, description, link }) => {
                          hover:shadow-purple-500/60 transition-all duration-300"
             >
               Live Preview
-              <span className="text-xs opacity-80 group-hover:translate-x-0.5 transition-transform">
+              {/* <span className="text-xs opacity-80 group-hover:translate-x-0.5 transition-transform">
                 ↗
-              </span>
+              </span> */}
             </button>
           </a>
         </div>
@@ -59,28 +63,28 @@ const ProjectCard = ({ image, title, description, link }) => {
 export default function Projects() {
   const listProjects = [
     {
-      image: "https://via.placeholder.com/400x300",
+      image: cardio,
       title: "CardioLink",
       description:
         "CardioLink is a cutting-edge web application designed for the detection of cardiovascular disease anomalies using advanced Artificial Intelligence (AI) and Machine Learning (ML) technologies. It collects real-time patient data via IoT devices, securely stores this data using Supabase, and generates comprehensive AI-driven reports to assist healthcare providers in early diagnosis and ongoing cardiac health monitoring.",
       link: "https://github.com/Krishna-Mantri/Cardio_link",
     },
     {
-      image: "https://via.placeholder.com/400x300",
+      image: ecommerce,
       title: "Ecommerce Platform",
       description:
         "Ecom is a modern, feature-rich e-commerce website built with a robust tech stack including Django for the backend, Tailwind CSS for frontend styling, and integrated payment processing via the Razorpay API.",
       link: "https://github.com/Krishna-Mantri/Ecom",
     },
     {
-      image: "https://via.placeholder.com/400x300",
+      image: todo,
       title: "Todo App",
       description:
         "A simple and efficient everyday To-do app built using React.js and Vite, designed to help with planning and scheduling daily tasks in a minimal, fast-refresh environment.",
       link: "https://github.com/Krishna-Mantri/Todo-react",
     },
     {
-      image: "https://via.placeholder.com/400x300",
+      image: crop,
       title: "Crop recommendation System",
       description:
         "This project is a Crop Recommendation System that uses machine learning to recommend the most suitable crop to cultivate based on environmental and soil parameters such as nitrogen, phosphorus, potassium levels, temperature, humidity, pH value, and rainfall.",
@@ -100,9 +104,8 @@ export default function Projects() {
   };
 
   return (
-    <main className="p-4 sm:p-6 lg:p-10">
+    <main id="projects" className="p-4 sm:p-6 lg:p-10">
       <section
-        id="projects"
         data-aos="fade-up"
         data-aos-delay="300"
         className="max-w-5xl mx-auto"
@@ -116,7 +119,8 @@ export default function Projects() {
             </span>
           </h1>
           <p className="max-w-2xl mx-auto text-sm sm:text-base text-gray-300 leading-relaxed">
-            A selection of my recent work showcasing my skills and experience in various domains.
+            A selection of my recent work showcasing my skills and experience in
+            various domains.
           </p>
         </header>
 
