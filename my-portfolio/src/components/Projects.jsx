@@ -81,7 +81,7 @@ export default function Projects() {
       title: "Todo App",
       description:
         "A simple and efficient everyday To-do app built using React.js and Vite, designed to help with planning and scheduling daily tasks in a minimal, fast-refresh environment.",
-      link: "https://github.com/Krishna-Mantri/Todo-react",
+      link: "https://glittering-bombolone-166196.netlify.app/",
     },
     {
       image: crop,

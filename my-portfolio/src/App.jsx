@@ -1,6 +1,6 @@
 import {React,useEffect} from 'react'
 import Hero from './components/hero.jsx'
-import About from './components/about.jsx'
+import About from './components/About.jsx'
 import Skills from './components/Skills.jsx'
 import Projects from './components/Projects.jsx'
 import Contact from './components/Contact.jsx'
