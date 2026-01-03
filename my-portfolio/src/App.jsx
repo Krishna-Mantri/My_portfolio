@@ -1,5 +1,5 @@
 import {React,useEffect} from 'react'
-import Hero from './components/hero.jsx'
+import Hero from './components/hero'
 import About from './components/About.jsx'
 import Skills from './components/Skills.jsx'
 import Projects from './components/Projects.jsx'
