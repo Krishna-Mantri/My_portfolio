@@ -3,6 +3,7 @@ import cardio from "/cardio1.png";
 import ecommerce from "/ecom1.png";
 import todo from "/todoreact.png";
 import crop from "/crop1.png";
+import regime from "/regime1.png";
 
 const ProjectCard = ({ image, title, description, link }) => {
   return (
@@ -68,6 +69,13 @@ export default function Projects() {
       description:
         "CardioLink is a cutting-edge web application designed for the detection of cardiovascular disease anomalies using advanced Artificial Intelligence (AI) and Machine Learning (ML) technologies. It collects real-time patient data via IoT devices, securely stores this data using Supabase, and generates comprehensive AI-driven reports to assist healthcare providers in early diagnosis and ongoing cardiac health monitoring.",
       link: "https://github.com/Krishna-Mantri/Cardio_link",
+    },
+    {
+      image: regime,
+      title: "Regime-Detector",
+      description:
+        "A machine learning application that detects and analyzes market regimes using KMeans clustering on technical indicators. Identify Bull, Bear, and Sideways market conditions with interactive visualizations. ",
+      link: "https://market-regime-detector.streamlit.app/",
     },
     {
       image: ecommerce,
@@ -184,3 +192,4 @@ export default function Projects() {
     </main>
   );
 }
+
