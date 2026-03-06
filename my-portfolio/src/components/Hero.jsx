@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./Navbar";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
-import resume from "/resume.pdf";
+import resume from "/My professional resume.pdf";
 import robo from "/robo.png";
 
 
@@ -47,4 +47,5 @@ export default function Hero() {
 
         </div>
     );
+
 }
